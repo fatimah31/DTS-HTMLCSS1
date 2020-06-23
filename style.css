@@ -20,26 +20,40 @@ aside {
   width: 30%;
   padding: 50px 30px;
   text-align: center;
-  background-color: #ffd901;
-  color: white;
+  /* background-color: #ffd901; */
+  color: #3d3d3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 50px 8px 0;
 }
 
+h1 {
+  color: #3d3d3d;
+}
+
+
 .quote {
     padding: 110px;
     text-align: center;
-    background-color: #fdf690;
+    /* background-color: #7efff5; */
     margin-top: 50px;
+    color: #3d3d3d;
 }
 
 q {
   font-style: italic;
+  display: block;
+  margin-top: 20px;
 }
 .surah {
   font-family: cursive;
   color: rgb(105, 105, 105);
   font-style: oblique;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 25px;
+  display: none;
 }
 
 header {
@@ -48,7 +62,7 @@ header {
   height: 65px;
   top: 0;
   z-index: 10;
-  background-color: #fddb19;
+  background-color: #3d3d3d;
 }
 
 
@@ -64,15 +78,11 @@ header a {
 }
 
 header a:hover {
-  background-color: rgb(252, 167, 39);
+  background-color: #4b4b4b;
   color: white;
   transition: all 0.5s;
 }
 
-header a.active {
-  background-color: rgb(250, 194, 42);
-  color: white;
-}
 
 header input[type=text] {
   padding: 6px;
@@ -94,14 +104,14 @@ header .search-container button {
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background:  rgb(252, 167, 39);
+  background:  #17c0eb;
   font-size: 17px;
   border: none;
   color: white;
 }
 
 header .search-container button:hover {
-  background: rgb(250, 194, 42);
+  background: #18dcff;
   transition: all 0.5s;
 }
 
@@ -122,9 +132,10 @@ header .auth {
   text-align: center;
   width: 100%;
   padding: 2rem;
-  background-color: #fddb19;
+  background-color: #3d3d3d;
   margin-top: 4rem;
   margin-bottom: 0;
+  color: white;
 }
 
 .footer {
@@ -133,7 +144,7 @@ header .auth {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #fddb19;
+  background-color: #3d3d3d;
   color: white;
   text-align: center;
   padding: 10px ;
@@ -246,7 +257,7 @@ header .auth {
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
+.card:hover, aside:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
@@ -257,7 +268,7 @@ header .auth {
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.container::after, .row::after, header::after {
   content: "";
   clear: both;
   display: table;
@@ -284,9 +295,9 @@ header .auth {
 }
 
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .column{
-    width: 100%;
+    width: 50%;
     display: block;
     text-align: center;
   }
@@ -303,8 +314,24 @@ header .auth {
   .row-main {
     flex: none;
   }
-   aside, #content {
+   aside, .card {
      width: 100%;
      display: block;
    }
+}
+
+@media (max-width: 670px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .header-left, .auth, .search-container {
+    display: none;
+  }
+
+  .column{
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }

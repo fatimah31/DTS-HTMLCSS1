@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HJ Shop</title>
+    <title>D23 Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-            <div class="logo">
-                <span>D23</span>
-            </div>
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <div class="auth">
-                <a href="#cart"><i class="fa fa-cart-plus"></i></a>
-                <a href="#signin">Login</a>
-                <a href="#signup">Join</a>
-            </div>
-            <div class="search-container">
-                <form action="#">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-              </div>
+      <div class="logo">
+        <span>D23</span>
+      </div>
+      <div class="header-left">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+     
+      <div class="auth">
+        <a href="#cart"><i class="fa fa-cart-plus"></i></a>
+        <a href="#signin">Login</a>
+        <a href="#signup">Join</a>
+      </div>
+      
+      <div class="search-container">
+        <form action="#">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <i class="fa fa-bars menu-icon"></i> 
     </header>
+
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div class="slideshow-container" id="home">
 
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
@@ -50,17 +56,21 @@
       </div>
   </div>
   <br>
+
   <!-- The dots/circles -->
   <div style="text-align:center">
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
   </div>
+
     <main>
       <div class="row-main">
         <div id="content">
           <div class="card">
             <article class="quote">
+              <h1>Sekilas Info</h1>
+              <img src="img/undraw_nature_m5ll.svg" height="200px" width="200px">
               <q>“Wahai anak cucu Adam, sesungguhnya Kami telah menyediakan pakaian untuk menutup auratmu 
                   dan untuk perhiasan bagimu. Tetapi pakaian taqwa itulah yang lebih baik”.</q>
               <p class="surah">Surah Al A’raf ayat 26</p>
@@ -69,6 +79,7 @@
         </div>
         <aside>
           <h1 id="about">About Us</h1>
+          <img src="img/undraw_profile_6l1l.svg" height="200px" width="200px">
           <p>Kami menjual berbagai pakaian muslim dan jenis pakaian lainnya beserta aksesorisnya.</p>
           <p>Kami juga menerima pesanan pakaian kostum. Pesanan anda akan dibuat oleh penjahit yang Anda bisa pilih sendiri!</p>
         </aside>
@@ -79,54 +90,50 @@
       <div class="row">
           <div class="column">
             <div class="card">
-              <img src="img/oren-barbar.jfif" alt="oren-barbar" width="80" height="300" style="width:100%">
+              <img src="img/oren-barbar.jfif" alt="oren-barbar" width="80" height="300" style="width: 100%">
               <div class="container">
                 <h2>Oren Barbar alias Fatimah</h2>
                 <p class="title">Boss</p>
                 <p>Barbar saat malam hari. Mengamuk jika lapar. Jangan biarkan dia lapar!</p>
                 <p>oren@barbar.com</p>
-                <p><button class="button" id="phone1" onclick="getElementById('phone1').innerHTML = 'Telp. 0812-xxxx-xxxx'">Contact</button></p>
               </div>
             </div>
           </div>
           <div class="column">
             <div class="card">
-              <img src="img/badmood-cat.jpg" alt="badmood-cat" width="80" height="300" style="width:100%">
+              <img src="img/badmood-cat.jpg" alt="badmood-cat" width="80" height="300" style="width: 100%">
               <div class="container">
                 <h2>Parjo badmood alias Fitra Wahdaniyah</h2>
                 <p class="title">Boss</p>
-                <p>Ini adalah ekspresi wajahnya sehari-hari. Jika dia tersenyum, waspadalah! berarti dia badmood!</p>
+                <p>Ini adalah ekspresi wajahnya sehari-hari. Jika dia tersenyum, waspadalah!</p>
                 <p>Parjo@badmood.com</p>
-                <p><button class="button" id="phone2" onclick="getElementById('phone2').innerHTML = 'Telp. 0812-xxxx-xxxx'">Contact</button></p>
               </div>
             </div>
           </div>
         <div class="column">
           <div class="card">
-            <img src="img/kitty-cat.jfif" alt="kitty-cat" width="80" height="300" style="width:100%">
+            <img src="img/kitty-cat.jfif" alt="kitty-cat" width="80" height="300" style="width: 100%">
             <div class="container">
-              <h2>Kitty alias Hariyanto</h2>
+              <h2>Kitty Mitty alias Hariyanto</h2>
               <p class="title">Boss</p>
-              <p>Jangan biarkan wajah imutnya menenggelamkanmu!<br><br></p>
+              <p>Jangan biarkan wajah imutnya menenggelamkanmu!<br></p>
               <p>kitty@cat.com</p>
-              <p><button class="button" id="phone3" onclick="getElementById('phone3').innerHTML = 'Telp. 0812-xxxx-xxxx'">Contact</button></p>
             </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <img src="img/kitty-cat.jfif" alt="kitty-cat" width="80" height="300" style="width:100%">
+            <img src="img/kitty-cat.jfif" alt="kitty-cat" width="80" height="300" style="width: 100%">
             <div class="container">
               <h2>Cemul alias Gresida Febrina</h2>
               <p class="title">Boss</p>
-              <p>Jangan biarkan wajah imutnya menenggelamkanmu!<br><br></p>
+              <p>Jangan biarkan wajah imutnya menenggelamkanmu!<br></p>
               <p>kitty@cat.com</p>
-              <p><button class="button" id="phone3" onclick="getElementById('phone3').innerHTML = 'Telp. 0812-xxxx-xxxx'">Contact</button></p>
             </div>
           </div>
         </div>
       </div>
-        <p class="footer">HJ Group - 2020</p> 
+        <p class="footer">DTS Tim D23 - 2020</p> 
     </footer>
     <script src="script.js"></script>
 </body>
