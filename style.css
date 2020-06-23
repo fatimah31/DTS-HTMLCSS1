@@ -44,19 +44,15 @@ q {
 
 header {
   width: 100%;
-  position: fixed;
+  position: sticky;
   height: 65px;
   top: 0;
   z-index: 10;
-
-}
-nav {
-  overflow: hidden;
   background-color: #fddb19;
-  position: sticky;
 }
 
-nav a {
+
+header a {
   float: left;
   display: block;
   color: white;
@@ -67,34 +63,34 @@ nav a {
   line-height: 35px;
 }
 
-nav a:hover {
+header a:hover {
   background-color: rgb(252, 167, 39);
   color: white;
   transition: all 0.5s;
 }
 
-nav a.active {
+header a.active {
   background-color: rgb(250, 194, 42);
   color: white;
 }
 
-nav input[type=text] {
+header input[type=text] {
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
   border: none;
 }
 
-nav .search-container {
+header .search-container {
   line-height: 35px;
   padding: 6px 10px;
 }
 
-nav .search-container input {
+header .search-container input {
   margin-left: 20px;
 }
 
-nav .search-container button {
+header .search-container button {
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
@@ -104,12 +100,12 @@ nav .search-container button {
   color: white;
 }
 
-nav .search-container button:hover {
+header .search-container button:hover {
   background: rgb(250, 194, 42);
   transition: all 0.5s;
 }
 
-nav .logo {
+header .logo {
   font-family: cursive;
   color: white;
   font-size: xx-large;
@@ -117,7 +113,7 @@ nav .logo {
   margin: 8px 20px;
 }
 
-nav .auth {
+header .auth {
   float: right;
 }
 
@@ -238,7 +234,7 @@ nav .auth {
 /* Three columns side by side */
 .column {
   float: left;
-  width: 33.3%;
+  width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
