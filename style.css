@@ -274,7 +274,7 @@ header .auth {
   display: table;
 }
 
-.title {
+.title, .email {
   color: grey;
 }
 
