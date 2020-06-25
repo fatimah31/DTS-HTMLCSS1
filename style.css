@@ -146,6 +146,16 @@ article {
   padding-bottom: 70px;
 }
 
+article img {
+  height: 300px; 
+  width: 300px;
+}
+
+.about-us img {
+  height: 300px; 
+  width: 400px;
+}
+
 q {
   font-style: italic;
   display: block;

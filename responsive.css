@@ -1,5 +1,10 @@
 /* For Tablets */
 @media all and (max-width: 1000px) {
+    .container {
+        width: 900px;
+        margin: 0 auto
+    }
+
     .column {
       width: 50%;
       margin-bottom: 50px;
@@ -11,6 +16,29 @@
 
     .about-us {
         width: fit-content;
+    }
+
+    article img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .about-us img {
+        height: 100px;
+        width: 100px;
+    }
+
+    q {
+        width: fit-content;
+    }
+
+    .about-us p {
+        width: fit-content;
+    }
+
+    .dot {
+        height: 5px;
+        width: 5px;
     }
   
     .top-wrapper h1 {
@@ -31,6 +59,11 @@
   
   /* For Smartphones */
   @media all and (max-width: 670px) {
+    .container {
+        width: 500px;
+        margin: 0 auto
+    }
+    
     .column {
       width: 100%;
     }
@@ -62,12 +95,35 @@
         line-height: 20px;
     }
 
+    .dot {
+        height: 5px;
+        width: 5px;
+    }
+
     article {
         width: fit-content;
     }
 
     .about-us {
         width: fit-content;
+    }
+
+    q {
+        width: fit-content;
+    }
+
+    .about-us p {
+        width: fit-content;
+    }
+
+    article img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .about-us img {
+        height: 100px;
+        width: 200px;
     }
   }
   
