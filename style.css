@@ -84,7 +84,7 @@ header .logo {
 }
 
 .menu-icon {
-  display: none;
+  display: none !important;
   color: white;
   size: 40px;
   padding: 21px 30px;

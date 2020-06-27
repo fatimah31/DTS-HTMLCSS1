@@ -53,7 +53,7 @@
     }
     
     .menu-icon {
-        display: block;
+        display: block !important;
     }
   }
   
@@ -80,7 +80,7 @@
     }
   
     .menu-icon {
-      display: block;
+      display: block !important;
     }
   
     .top-wrapper h1 {
